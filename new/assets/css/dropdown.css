@@ -52,3 +52,98 @@
   vertical-align: middle;
   display: inline;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  background-color: #1a1a1a;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 999;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.mega-left,
+.mega-center,
+.mega-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mega-left h3 {
+  color: orange;
+  font-size: 14px;
+  margin: 0;
+}
+
+.mega-left h2 {
+  font-size: 22px;
+  color: #eee;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.mega-left p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.mega-left .btn {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.mega-center img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mega-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.service-box .icon {
+  font-size: 24px;
+  color: orange;
+}
+
+.service-box h4 {
+  margin: 0;
+  color: orange;
+}
+
+.service-box p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #ccc;
+}
