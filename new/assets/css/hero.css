@@ -1,0 +1,77 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  width: 100%;
+  height: 90vh;
+  background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.hero-btn {
+  background-color: #ff7714;
+  color: #111;
+  padding: 14px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: #e0ac58;
+  transform: scale(1.05);
+}
+
+ /* Hero animation */
+.hero-content h1 {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+.hero-content p {
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+.hero-content a.hero-btn {
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

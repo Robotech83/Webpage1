@@ -1,0 +1,54 @@
+/* ===== DROPDOWN MENU ===== */
+.nav-menu .dropdown {
+  position: relative;
+}
+
+.nav-menu .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #111;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+  border-top: 3px solid #f9c57e;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.nav-menu .dropdown-menu li {
+  padding: 0;
+}
+
+.nav-menu .dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-menu .dropdown-menu li a:hover {
+  background-color: #222;
+  color: #f9c57e;
+}
+
+/* Show dropdown on hover */
+.nav-menu .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Arrow indicator next to text */
+.nav-menu > .dropdown > a::after {
+  content: ' ▾';
+  font-size: 0.7em;
+  margin-left: 6px;
+  vertical-align: middle;
+  display: inline;
+}

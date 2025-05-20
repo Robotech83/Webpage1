@@ -1,0 +1,64 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;               /* Hidden by default */
+  width: 400px;             /* Adjusted for better visibility */
+  right: -400px;            /* Hidden by default */
+  height: 100vh;
+  background-color: #111;
+  z-index: 9999;
+  transition: right 0.4s ease;
+  padding: 40px 20px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff7714;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.side-menu-content {
+  margin-top: 60px;
+  max-width: 400px;      /* ✅ Optional: clean layout on large screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-image {
+  width: 100%;            /* ✅ Slight tweak for responsiveness */
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 20px;
+}
+
+.side-text {
+  font-weight: bold;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.side-menu p {
+  color: #ccc;
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.4;
+  word-wrap: break-word;   /* ✅ Helps with long email or address strings */
+}
+
+.side-menu i {
+  margin-right: 8px;
+  color: #f97316;
+}

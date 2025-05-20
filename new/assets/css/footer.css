@@ -1,0 +1,83 @@
+/* Footer Main Section */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 60px 5% 30px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* Section Titles */
+.footer h4 {
+  color: #f9c57e;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Links and Text */
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.8;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #e0ac58;
+}
+
+/* Newsletter Form */
+.footer-newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter button {
+  background-color:#ff7714;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e0ac58;
+}
+
+/* Social Media Icons */
+.footer-social a {
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(primary-color);
+}
+
+/* Bottom Bar */
+.subfooter {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 5%;
+  font-size: 13px;
+  border-top: 1px solid #222;
+}

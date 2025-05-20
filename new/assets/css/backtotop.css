@@ -1,0 +1,35 @@
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff7714;
+  color: #111;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, opacity 0.3s;
+
+
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 45px;
+  height: 45px;
+}
+
+.back-to-top .fa-solid {
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  background-color: #e0ac58;
+}
+
+.back-to-top:hover .fa-solid {
+  color: #fff;
+}
+

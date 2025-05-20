@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Renovation Site</title>
+
+  <!-- Global & Component Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/topbar.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/backtotop.css">
+  <link rel="stylesheet" href="./assets/css/hero.css">
+  <link rel="stylesheet" href="./assets/css/sidemenu.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-container">
+        <div class="topbar-left">
+          <span><i class="fa-regular fa-envelope"></i> info@webemail.com</span>
+          <span><i class="fa-solid fa-phone"></i> (+0) 123 456 7899</span>
+          <span><i class="fa-regular fa-clock"></i> Opening Time: 10AM – 6PM</span>
+        </div>
+        <div class="topbar-right">
+          <a href="#" class="support-btn">SUPPORT CENTER <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div id="header-container">
+        <div class="logo">
+          <img src="https://backtheme.com/construction/wp-content/uploads/2024/01/logo.png" alt="Logo">
+        </div>
+        <div class="header-content">
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="dropdown">
+                <a href="#">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Interior Design</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Consulting</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">About</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Interior Design</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Consulting</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Interior Design</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Consulting</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Elements</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Blog</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Right Icons -->
+            <div class="navbar-icons">
+              <a href="#" class="navbar-icon" onclick="toggleSearch(event)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <div class="search-box" id="searchBox">
+                <input type="text" placeholder="Search...">
+              </div>
+              <div class="hamburger-menu" onclick="toggleSideMenu()">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-divider"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+      <button class="close-btn" onclick="toggleSideMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="side-menu-content">
+        <img src="./assets/images/building.jpg" alt="Project Image" class="side-image">
+        <p class="side-text">
+          WE CONSTRUCT STRUCTURES AND <br>
+          CRAFT EXCEPTIONAL RESIDENCES WITH <br>
+          EXCELLENCE.
+        </p>
+        <hr>
+        <p><i class="fa-solid fa-location-dot"></i> 6391 Elgin Fastibs Std...</p>
+        <p><i class="fa-solid fa-phone"></i> (+00545 54545 45545)</p>
+        <p><i class="fa-regular fa-envelope"></i> info@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Your Dream Renovation Starts Here</h1>
+          <p>Expert builders & designers for residential and commercial projects.</p>
+          <a href="#contact" class="hero-btn">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>123 Main Street<br>City, Country</p>
+        <p>Phone: (+0) 123 456 7899</p>
+        <p>Email: info@webemail.com</p>
+      </div>
+      <div class="footer-company">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <a href="#">Interior Design</a>
+        <a href="#">Architecture</a>
+        <a href="#">Consulting</a>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subfooter -->
+  <div class="subfooter">
+    <p>© 2024 by Builo. All Rights Reserved</p>
+  </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- JavaScript Files -->
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/backtotop.js"></script>
+  <script src="./assets/js/sidemenu.js"> </script>
+</body>
+
+</html>
