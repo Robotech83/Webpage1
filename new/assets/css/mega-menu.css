@@ -1,0 +1,90 @@
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  background-color: #1a1a1a;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 999;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* Column styles */
+.mega-col {
+  flex: 1;
+}
+
+.mega-left h3 {
+  color: #f9c57e;
+  font-size: 14px;
+  margin: 0;
+}
+
+.mega-left h2 {
+  font-size: 24px;
+  color: #fff;
+  margin: 10px 0;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.mega-left p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.mega-left .btn {
+  background-color: #f9c57e;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.mega-center {
+  text-align: center;
+}
+
+.mega-center img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mega-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-box {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.service-box .icon {
+  font-size: 28px;
+  color: #f9c57e;
+  min-width: 28px;
+}
+
+.service-box h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.service-box p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
