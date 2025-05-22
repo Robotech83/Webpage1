@@ -1,0 +1,64 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gamedev-hero {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gamedev-hero h1 {
+  font-size: 48px;
+  color: #ff7714;
+}
+
+.gamedev-hero p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.gamedev-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.game-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.game-card h2 {
+  color: #f9c57e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game-card p {
+  color: #ddd;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.game-card a {
+  display: inline-block;
+  background-color: #ff7714;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.game-card a:hover {
+  background-color: #e0ac58;
+}
