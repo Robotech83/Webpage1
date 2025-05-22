@@ -1,0 +1,48 @@
+.portfolio-header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.portfolio-filters {
+  margin-top: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #ff7714;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #e0ac58;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.portfolio-item {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
