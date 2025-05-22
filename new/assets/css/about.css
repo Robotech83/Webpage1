@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6 {
+body {
   background-color: #111;
   color: #ddd;
   font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .about-hero h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  color: #ff7714;
 }
 
 .about-hero p {
@@ -28,16 +29,28 @@ body, h1, h2, h3, h4, h5, h6 {
   padding: 0 20px;
 }
 
+.about-content h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #ff7714;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
 .bio h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #f9c57e;
+  color: #ff7714;
 }
 
 .bio h3 {
   font-size: 22px;
   font-weight: bold;
-  color: #f9c57e;
+  color: #ff7714;
   margin-top: 30px;
 }
 
