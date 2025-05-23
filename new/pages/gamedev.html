@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <title>Game Development</title>
   <link rel="stylesheet" href="../assets/css/gamedev.css">
+  <link rel="stylesheet" href="../assets/css/topbar.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/backtotop.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+<!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-container">
+        <div class="topbar-left">
+          <span><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</span>
+          <span><i class="fa-solid fa-phone"></i> (+1) 253 </span>
+        </div>
+        <div class="topbar-right">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   <section class="gamedev-hero">
     <h1>Game Development Projects</h1>
     <p>Exploring fun, logic, and interactivity through browser-based games.</p>
@@ -23,6 +44,8 @@
       <p>
       </p>
       <a href="https://robotech83.itch.io/ui-fund" target="_blank">View Project</a>
+      <a href="./tictactoe-gallery.html" class="gallery-btn">View Gallery</a>
+      
     </div>
 
     <div class="game-card">
@@ -32,8 +55,30 @@
         Godot editor and how to create a game from scratch. Though this is not a finished product I am having so 
       much fun learning all of the steps to get it working and how to fix things when it breaks.</p>
       <a href="https://robotech83.itch.io/the-beast-within" target="_blank">View Project</a>
+      <a href="./tictactoe-gallery.html" class="gallery-btn">View Gallery</a>
     </div>
   </section>
+<!-- FOOTER -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h4>Contact Me</h4>
+          <p>Phone: (+1) 253</p>
+          <p>Email: robotech83@protonmail.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- Subfooter -->
+    <div class="subfooter">
+      <p> 2025 My Portfolio. </p>
+      <p>Designed by Robotech83</p>
+      <!-- Back to Top -->
+      <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
 
+    <!-- JavaScript Files -->
+    <script src="../assets/js/backtotop.js"></script>
 </body>
 </html>
