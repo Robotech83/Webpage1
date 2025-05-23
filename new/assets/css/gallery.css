@@ -25,3 +25,24 @@ body {
 .gallery-grid img:hover {
   transform: scale(1.02);
 }
+
+.nav-home {
+  background-color: #000;
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.nav-home a {
+  color: #ff7714;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-home a:hover {
+  color: #f9c57e;
+}
+
+.nav-home {
+  text-align: right;
+}

@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <title>Contact Me</title>
     <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/topbar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/backtotop.css">
+    <link rel="stylesheet" href="../assets/css/backtoprevious.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="topbar-left">
+                <span><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> (+1) 253 </span>
+            </div>
+            <div class="topbar-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<section class="contact-header">
-  <h1>Contact Me</h1>
-  <p>Have a question, project idea, or want to collaborate? Reach out!</p>
-</section>
+    <section class="contact-header">
+        <h1>Contact Me</h1>
+        <p>Have a question, project idea, or want to collaborate? Reach out!</p>
+    </section>
     <div class="nav-home">
         <a href="../index.html"> Home</a>
+        <div class="nav-back">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+        </div>
     </div>
 
     <section class="contact-form-container">
@@ -32,6 +57,28 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact Me</h4>
+                <p>Phone: (+1) 253</p>
+                <p>Email: robotech83@protonmail.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- Subfooter -->
+    <div class="subfooter">
+        <p> 2025 My Portfolio. </p>
+        <p>Designed by Robotech83</p>
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top" id="backToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/backtotop.js"></script>
 
 </body>
 
