@@ -2,7 +2,7 @@
 
 .topbar {
   background-color: transparent;
-  color: #eee;
+  color: white;
   font-size: 14px;
   padding: 10px 0;
 }
@@ -40,13 +40,13 @@
   transform: translateY(-50%);
   height: 14px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: white;
 }
 
 /* ===== ICON COLOR ===== */
 .topbar-left i,
 .topbar-right i {
-  color: #f9c57e;
+  color:var(--primary-color);
 }
 
 /* ===== RIGHT SIDE: Support Button + Icons ===== */
@@ -54,24 +54,6 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-/* SUPPORT CENTER BUTTON */
-.support-btn {
-  background-color: #ff7714;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: background-color 0.3s;
-}
-
-.support-btn:hover {
-  background-color: #e0ac58;
 }
 
 /* SOCIAL ICONS */

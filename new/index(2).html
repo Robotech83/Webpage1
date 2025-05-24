@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Site</title>
+
+  <!-- Global & Component Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/topbar.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/backtotop.css">
+  <link rel="stylesheet" href="./assets/css/hero.css">
+  <link rel="stylesheet" href="./assets/css/sidemenu.css">
+  <link rel="stylesheet" href="./assets/css/logo.css">
+
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quattrocento:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-container">
+        <div class="topbar-left">
+          <span><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</span>
+          <span><i class="fa-solid fa-phone"></i> (+1) 253 </span>
+        </div>
+        <div class="topbar-right">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div id="header-container">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="./assets/pictures/2025-02-01-17-18-02-432.jpg" alt="Robotech83 Logo">
+          <span class="logo-text">Keneshia Edwards (Robotech83)</span>
+        </div>
+        <div class="header-content">
+          <nav class="navbar">
+            <ul class="nav-menu">
+
+              <li class="dropdown">
+                <a href="#">About</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./pages/about.html">(Robotech83)</a></li>
+                </ul>
+
+              <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./pages/web-dev.html">Web Projects</a></li>
+                  <li><a href="./pages/robotics.html">Robotics Projects</a></li>
+                  <li><a href="./pages/gamedev.html">Game Development</a></li>
+                  <li><a href="./pages/resume.html">Resume</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="mega-menu">
+                  <!-- Column 1: Left Text -->
+                  <div class="mega-col mega-left">
+                    <h3>Why Work With Me</h3>
+                    <h2>Custom Solutions in Robotics, Web Apps, and Game Development</h2>
+                    <p>I specialize in building intelligent machines, interactive web tools, and game logic systems.
+                      Whether you need a responsive website, an automated prototype, or help launching your next project
+                      — I bring hands-on experience and creative thinking to make it happen.</p>
+                    <a class="btn" href="./pages/contact.html">Let's Talk <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+
+                  <!-- Column 2: Center Image -->
+                  <div class="mega-col mega-center">
+                    <img src="./assets/pictures/2025-02-01-17-18-02-432.jpg" alt="Sonny" />
+                  </div>
+
+                  <!-- Column 3: Right Services -->
+                  <div class="mega-col mega-right">
+                    <div class="service-box">
+                      <i class="fa-solid fa-wifi icon"></i>
+                      <div>
+                        <h4> My Web Development Journey</h4>
+                        <p>I’ve always been fascinated by how the web works, and I wanted to create a platform to
+                          showcase my projects
+                          and
+                          connect with others in the maker community.</p>
+                      </div>
+                    </div>
+                    <div class="service-box">
+                      <i class="fa-solid fa-cog icon"></i>
+                      <div>
+                        <h4>Robotics and AI</h4>
+                        <p>Over the last 6 years, I’ve built various robotic systems, integrating hardware and AI to
+                          bring machines to life..</p>
+                      </div>
+                    </div>
+                    <div class="service-box">
+                      <i class="fa-solid fa-pencil-ruler icon"></i>
+                      <div>
+                        <h4>Game Development</h4>
+                        <p>For the past two years, I’ve been exploring game development — combining creativity, logic,
+                          and design into
+                          interactive experiences.</p>
+                      </div>
+                    </div>
+                    <div class="service-box">
+                      <i class="fa-solid fa-car icon"></i>
+                      <div>
+                        <h4> Auto Mechanic</h4>
+                        <p>10+ years of hands-on experience in diagnostics, engine repair, and mechanical systems.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="dropdown">
+                <a href="#">Elements</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Blog</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Contact</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./pages/contact.html">Contact Me</a></li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+
+            <!-- Right Icons -->
+            <div class="navbar-icons">
+              <a href="#" class="navbar-icon" onclick="toggleSearch(event)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <div class="search-box" id="searchBox">
+                <input type="text" placeholder="Search...">
+              </div>
+              <div class="hamburger-menu" onclick="toggleSideMenu()">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-divider"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu" >
+      <button class="close-btn" onclick="toggleSideMenu()">
+        <i class="fa-solid fa-times"></i>
+      </button>
+      <div class="side-menu-content">
+        <!-- <img src="./assets/pictures/2025-02-01-17-18-02-432.jpg" alt="Project Image" class="side-image"> -->
+        <div class="side-image"></div>
+
+        <p class="side-text">
+          We Construct Structures and Craft Exceptional Residences with Excellence.
+        </p>
+
+        <!-- <p class="side-text">
+          (Robotech83) <br>
+          Building beuatiful webpages and applications.<br>
+          Building Robots and other mechanical devices.<br>
+          Auto Mechanic for over 10 years.<br>
+        </p> -->
+
+        <hr>
+
+        <div class="contact-grid">
+         <i class="fa-solid fa-phone"></i> <span>(+1) 253</span>
+         <i class="fa-solid fa-envelope"></i> <span>robotech83@protonmail.com</span>
+        </div>
+
+        <hr>
+        <!-- <p><i class="fa-solid fa-phone"></i> (+1) 253 </p>
+        <p><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</p> -->
+
+        <h4>Got a project in mind?</h4>
+        <button class="lets-talk-btn">
+          Let's Talk
+        </button>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>From Auto Mechanic to Full-Stack Maker</h1>
+          <p>
+            With over a decade of hands-on mechanical experience, I now design intelligent robots, build custom web
+            tools, and explore game logic. I'm driven by curiosity, creativity, and code.
+          </p>
+          <div class="hero-btns">
+            <a href="./pages/robotics.html" class="hero-btn">View My Robotics</a>
+            <a href="./pages/about.html" class="hero-btn ghost">My Story</a>
+            <a href="./pages/web-dev.html" class="hero-btn ">View My Web Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h4>Contact Me</h4>
+        <p>Phone: (+1) 253</p>
+        <p>Email: robotech83@protonmail.com</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Subfooter -->
+  <div class="subfooter">
+    <p> 2025 My Portfolio. </p>
+    <p>Designed by Robotech83</p>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- JavaScript Files -->
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/backtotop.js"></script>
+  <script src="./assets/js/sidemenu.js"> </script>
+</body>
+
+</html>

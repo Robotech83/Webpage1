@@ -1,64 +1,142 @@
+/* width 300px; */
+/* p: 75 40 40 40 */
+
 .side-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;               /* Hidden by default */
-  width: 400px;             /* Adjusted for better visibility */
-  right: -400px;            /* Hidden by default */
-  height: 100vh;
-  background-color: #111;
-  z-index: 9999;
-  transition: right 0.4s ease;
-  padding: 40px 20px;
-  overflow-y: auto;
-  text-align: center;
+	position: fixed;
+	top: 0;
+	/* right: -100%;    */
+	right: -100%;
+	width: 380px;
+	height: 100vh;
+	background-color: white;
+	z-index: 9999;
+	transition: right 0.4s ease-in-out;
+	padding: 40px 40px 40px 40px;
+	overflow-y: auto;
 }
 
 .side-menu.active {
-  right: 0;
+	right: 0;
 }
 
 .side-menu .close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #ff7714;
-  border: none;
-  color: white;
-  font-size: 24px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+	align-items: center;
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	display: flex;
+	height: 36px;
+	justify-content: center;
+	width: 36px;
+}
+
+.side-menu .close-btn:hover {
+	filter: brightness(0.8);
+}
+
+.side-menu .close-btn i {
+	color: #fff;
+	font-size: 20px;
 }
 
 .side-menu-content {
-  margin-top: 60px;
-  max-width: 400px;      /* ✅ Optional: clean layout on large screens */
-  margin-left: auto;
-  margin-right: auto;
+	margin-top: 60px;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.side-image {
-  width: 100%;            /* ✅ Slight tweak for responsiveness */
-  border-radius: 50% 50% 0 0;
-  margin-bottom: 20px;
+.side-menu-content .side-image {
+	width: 300px;
+	height: 350px;
+	border-radius: 50% 50% 0 0;
+	margin-bottom: 20px;
+	background-color: green;
 }
 
-.side-text {
-  font-weight: bold;
-  color: white;
-  line-height: 1.5;
-  margin-bottom: 30px;
+.side-menu-content .side-text {
+	margin: 0;
+	font-size: 24px;
+	line-height: 34px;
+	color: #333;
+	text-align: center;
+	font-family: "Bebas Neue";
 }
 
-.side-menu p {
-  color: #ccc;
-  margin: 10px 0;
-  font-size: 15px;
-  line-height: 1.4;
-  word-wrap: break-word;   /* ✅ Helps with long email or address strings */
+.side-menu-content hr {
+	margin: 20px 0;
+	border: 0;
+	border-bottom: 1px dotted #ccc;
 }
 
-.side-menu i {
-  margin-right: 8px;
-  color: #f97316;
+.side-menu-content .contact-grid {
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: 30px 1fr;
+	grid-gap: 5px;
+	align-items: center;
+	font-family: "Quattrocento", serif;
 }
+
+.side-menu-content .contact-grid i {
+	font-size: 16px;
+}
+
+.side-menu-content h4 {
+	font-size: 24px;
+	font-weight: 400;
+	font-family: "Bebas Neue";
+	line-height: 34px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.side-menu-content .lets-talk-btn {
+	background-color: var(--primary-color);
+	border-radius: 30px;
+	border: 0;
+	color: white;
+	font-family: "Bebas Neue";
+	font-size: 18px;
+	font-weight: 400;
+	padding: 14px 40px;
+}
+
+.side-menu-content .social-icons {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.side-menu-content .social-icons a {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	transition: all 1s ease;
+	border-radius: var(--border-radius);
+}
+
+.side-menu-content .social-icons a:hover {
+	background-color: var(--primary-color);
+}
+
+.side-menu-content .social-icons a:hover i {
+	color: white;
+}
+
+.side-menu-content .social-icons a i {
+	color: #333;
+}
+
+/* .side-menu p {
+	color: #ccc;
+	margin: 10px 0;
+	font-size: 15px;
+	line-height: 1.4;
+	word-wrap: break-word; 
+} */

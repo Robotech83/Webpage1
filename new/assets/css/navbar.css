@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  background-color: #111;
+  background-color: white;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
 
 /* ===== NAV LINKS ===== */
 .nav-menu li a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   padding: 10px;
@@ -38,18 +38,18 @@
 }
 
 .nav-menu li a:hover {
-  color: #f9c57e;
+  color: var(--primary-color);
 }
 
 /* Book Now Button */
 .nav-btn {
   padding: 10px 20px;
-  background-color: #ff7714;
-  color: #111;
+  background-color: var(--primary-color);
+  color: var(--bg-color-2);
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 1s ease, transform 1s ease;
   display: inline-block;
 }
 
