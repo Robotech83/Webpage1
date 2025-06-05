@@ -1,9 +1,9 @@
 :root{
     --primary-color: #ff7714;    /* Orange - buttons, hover, accents */
     --border-radius: 4px;          /* Border radius for buttons and inputs */
-    --bg-color-1: rgb(0,0,0,0.7); /* Main background color */
+    --bg-color-1: #111; /* Main background color */
     --bg-color-2: #333;
-    --text-color: #ccc;          /* Default text color */
+    --text-color: #f0f0f0;          /* Default text color */
     --bg-btn-color: rgb(181,175,166); /* Background color for buttons */
     --bg-btn-hover-color: #e0ac58; /* Background color for button hover */
     --bg-btn-ghost-color: transparent; /* Background color for ghost buttons */
@@ -11,17 +11,18 @@
 
 /*  CSS Reset */
  html,
- body {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: var(--text-color);
-    box-sizing: border-box;
- }
- 
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+
 *{
     margin: 0;
     padding: 0;

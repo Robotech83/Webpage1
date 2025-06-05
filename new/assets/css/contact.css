@@ -1,21 +1,29 @@
+
+
 body {
-  background-color: #111;
-  color: white;
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+.contact-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
 .contact-header {
   text-align: center;
   padding: 40px 20px;
-  background-color: #1a1a1a;
+  background-color: var(--bg-color-1);
 }
 
 .contact-header h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  color: #ff7714;
+  color: var(--primary-color);
 }
 
 .contact-header p {
@@ -24,7 +32,7 @@ body {
 }
 
 .contact-hero {
-  background-color: #1a1a1a;
+  background-color: var(--bg-color-1);
   padding: 60px 20px;
   text-align: center;
 }
@@ -62,7 +70,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #222;
+  background-color: var(--bg-color-1);
   color: white;
   font-size: 16px;
 }
@@ -70,14 +78,14 @@ body {
 .contact-form button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #ff7714;
-  color: #111;
+  background-color: var(--primary-color);
+  color: var(--bg-color-1);
   border: none;
   font-weight: bold;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 1s;
 }
 
 .contact-form button:hover {
@@ -85,13 +93,13 @@ body {
 }
 
 .nav-home {
-  background-color: #000;
+  background-color: var(--bg-color-1);
   padding: 15px 20px;
   text-align: left;
 }
 
 .nav-home a {
-  color: #ff7714;
+  color: var(--primary-color);
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;

@@ -2,84 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="../assets/css/contact.css">
-    <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/backtotop.css">
-    <link rel="stylesheet" href="../assets/css/backtoprevious.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me | Robotech83</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/topbar.css" />
+  <link rel="stylesheet" href="../assets/css/header.css" />
+  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/dropdown.css" />
+  <link rel="stylesheet" href="../assets/css/mega-menu.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/backtotop.css" />
+  <link rel="stylesheet" href="../assets/css/sidemenu.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <!-- TOPBAR -->
-    <div class="topbar">
-        <div class="topbar-container">
-            <div class="topbar-left">
-                <span><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</span>
-                <span><i class="fa-solid fa-phone"></i> (+1) 253 </span>
-            </div>
-            <div class="topbar-right">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <span><i class="fa-regular fa-envelope"></i> robotech83@protonmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> (+1) 253</span>
+      </div>
+      <div class="topbar-right">
+        <div class="social-icons">
+          <a href="https://facebook.com/Robotech83"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Robotech83"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://youtube.com/@Robotech83"><i class="fab fa-youtube"></i></a>
+          <a href="https://instagram.com/Robotech83"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
     </div>
+  </div>
 
-    <section class="contact-header">
+  <!-- Header and Nav -->
+  <header>
+    <div id="header-container">
+      <div class="logo">
+        <img src="../assets/pictures/2025-02-01-17-18-02-432.jpg" alt="Robotech83 Logo" />
+        <span class="logo-text">Keneshia Edwards (Robotech83)</span>
+      </div>
+      <div class="header-content">
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="dropdown"><a href="../index.html">Home</a></li>
+            <li class="dropdown"><a href="./web-dev.html">Web Projects</a></li>
+            <li class="dropdown"><a href="./robotics.html">Robotics</a></li>
+            <li class="dropdown"><a href="./gamedev.html">Games</a></li>
+            <li class="dropdown"><a href="./resume.html">Resume</a></li>
+            <li class="dropdown"><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
         <h1>Contact Me</h1>
         <p>Have a question, project idea, or want to collaborate? Reach out!</p>
-    </section>
-    <div class="nav-home">
-        <a href="../index.html"> Home</a>
-        <div class="nav-back">
-            <button class="back-btn" onclick="history.back()">← Back</button>
-        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- Contact Form -->
+  <main class="contact-wrapper">
     <section class="contact-form-container">
-        <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+      <form class="contact-form" action="mailto:robotech83@protonmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
-    <!-- FOOTER -->
-    <section class="footer">
-        <div class="footer-container">.
-            <div class="footer-contact">
-                <h4>Contact Me</h4>
-                <p>Phone: (+1) 253</p>
-                <p>Email: robotech83@protonmail.com</p>
-            </div>
-        </div>
-    </section>
-    <!-- Subfooter -->
-    <div class="subfooter">
-        <p> 2025 My Portfolio. </p>
-        <p>Designed by Robotech83</p>
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top" id="backToTop">
-            <i class="fa-solid fa-chevron-up"></i>
-        </a>
+  </main>
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h4>Contact Me</h4>
+        <p>Phone: (+1) 253</p>
+        <p>Email: robotech83@protonmail.com</p>
+      </div>
     </div>
+  </section>
+  <div class="subfooter">
+    <p>&copy; 2025 My Portfolio. Designed by Robotech83</p>
+    <a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></a>
+  </div>
 
-    <!-- JavaScript Files -->
-    <script src="../assets/js/backtotop.js"></script>
-
+  <!-- Scripts -->
+  <script src="../assets/js/backtotop.js"></script>
 </body>
 
 </html>
